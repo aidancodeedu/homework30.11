@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+    //   1) 3 ədəd rəqəm mənimsət və bu rəqəmlərin bu kvadratlarının cəmini hesablayıb console-a yazdır.
+
+        let a = 2;
+        let b = 10;
+        let c = 20;
+        console.log(
+          " 1) 3 ədəd rəqəm mənimsət və bu rəqəmlərin bu kvadratlarının cəmini hesablayıb console-a yazdır." +
+            " \n " +
+            Math.pow(a, b)
+        );
+
+        // 2) 3 ədəd rəqəm  mənimsət  və bu 3 rəqəmin ədədi ortasını console-a yazdırın.
+
+        console.log(
+          "2) 3 ədəd rəqəm  mənimsət  və bu 3 rəqəmin ədədi ortasını console-a yazdırın." +
+            " \n " +
+            Math.floor((a + b + c) / 3)
+        );
+
+        // 3) 1-dən 100 ə qədər olan ədədləri console-a yazdırın.
+
+        for (let i = 0; i < 100; i++) {
+          console.log(
+           i
+          );
+        }
+
+        // 4) 1-dən 100 ə qədər olan cüt ədədləri console-a yazdırın.
+
+        for (let i = 0; i < 100; i++) {
+          if (i % 2 == 0) {
+            console.log( "4) 1-dən 100 ə qədər olan cüt ədədləri console-a yazdırın." +
+                " \n " + i);
+          }
+        }
+
+    //   // 5) 1-dən 100-ə qədər 3-ə bölünənlər ədədlərin sayını console yazdırın.
+
+      var allNumbers = Array.from(Array(100).keys());
+      allNumbers = allNumbers.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+          if (number % i === 0) return false;
+        }
+        return true;
+      });
+      console.log(allNumbers.length);
+
+      // 7) " ***** " Bu simvolu console-a yazdırın.
+
+      for (let j = 0; j < 5; j++) {
+        for (let j = 0; j < 5; j++)
+          console.log("*****\n*****\n*****\n*****\n*****\n");
+      }
+
+      //   8) " ***** " Bu simvolu console-a yazdırın.
+      for (let j = 0; j < 5; j++) {
+        for (let j = 0; j < 5; j++) console.log("*****\n****\n***\n**\n*\n");
+      }
+
+      //   9)  Ədədin ikinin üstü olub olmadığını tapın.
+
+      const x = 16;
+      if (Math.log2(x) % 1 === 0) {
+        console.log(" 9)  Ədədin ikinin üstü olub olmadığını tapın." +'\n'+ "Yes "+ x +  " is");
+
+      
+      }
+      else{
+        console.log(" 9)  Ədədin ikinin üstü olub olmadığını tapın." + "Noo "+ x + " is not");
+
+      }
+
+      //   10) Ədədin mərtəbəliyini console-a yazıdırın. (Example: 322 - 3, 2005 - 4)
+
+      let v = "200";
+      console.log(v.length);
+
+      //   11) Array-da ədədin olub olmadığını tapın.
+
+      let array = [2];
+      if (array.length > 0) {
+        console.log(
+          " 11) Array-da ədədin olub olmadığını tapın." +
+            "\n" +
+            "Array is not empty it has" +
+            " " +
+            array.length +
+            " length"
+        );
+      } else {
+        console.log(
+          " 11) Array-da ədədin olub olmadığını tapın." +
+            "\n " +
+            "array is empty"
+        );
+      }
+
+      //   12) Array-in içərisində ən böyük və ən kiçik ədədi tapın.
+
+      array = [3, 4, 8, 0];
+      console.log(Math.max(...array));
+      console.log(Math.min(...array));
+
+      //   13) Verilmiş düzbucaqlı şkafın hər hansı bir qapıdan keçib-keçmədiyini
+      //   tapan algorithm yazın. (Example: qapının ölçüləri: 4,5 şkafın ölçüləri: 1,1,1, nəticə: true )
+
+      const doorWidth = 25;
+      const doorLength = 40;
+
+      const wardrobeWidth = 12;
+      const wardrobeLength = 20;
+
+      if (wardrobeLength < doorLength && wardrobeWidth < doorWidth) {
+        console.log(true);
+      } else if (
+        wardrobeLength > doorLength &&
+        wardrobeWidth < doorLength &&
+        wardrobeLength < doorWidth
+      ) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+    </script>
+  </body>
+</html>
