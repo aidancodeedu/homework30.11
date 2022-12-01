@@ -58,15 +58,30 @@
 
       // 7) " ***** " Bu simvolu console-a yazdırın.
 
-      for (let j = 0; j < 5; j++) {
-        for (let j = 0; j < 5; j++)
-          console.log("*****\n*****\n*****\n*****\n*****\n");
+//       for (let j = 0; j < 5; j++) {
+//         for (let j = 0; j < 5; j++)
+//           console.log("*****\n*****\n*****\n*****\n*****\n");
+//       }
+        let text = " ";
+    for (let j = 0; j < 5; j++) {
+      for (let k = 0; k < 5; k++) {
+        text += "*";
       }
+      text += "\n"
+    } console.log(text);
 
       //   8) " ***** " Bu simvolu console-a yazdırın.
-      for (let j = 0; j < 5; j++) {
-        for (let j = 0; j < 5; j++) console.log("*****\n****\n***\n**\n*\n");
+//       for (let j = 0; j < 5; j++) {
+//         for (let j = 0; j < 5; j++) console.log("*****\n****\n***\n**\n*\n");
+//       }
+  text = " ";
+    for (let j = 5; j > 0; j--) {
+      for (let k = 0; k < j; k++) {
+        text += "*";
       }
+      text += "\n"
+    } console.log(text);
+
 
       //   9)  Ədədin ikinin üstü olub olmadığını tapın.
 
